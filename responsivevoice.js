@@ -20,9 +20,9 @@ if (typeof responsiveVoice != 'undefined') {
 
         // Our own collection of voices
         self.responsivevoices = [
+            {name: 'US English Female', voiceIDs: [39, 40, 41, 42, 43, 44]},
             {name: 'UK English Female', voiceIDs: [3, 5, 1, 6, 7, 8]},
             {name: 'UK English Male', voiceIDs: [0, 4, 2, 6, 7, 8]},
-            {name: 'US English Female', voiceIDs: [39, 40, 41, 42, 43, 44]},
             {name: 'Spanish Female', voiceIDs: [19, 16, 17, 18, 20, 15]},
             {name: 'French Female', voiceIDs: [21, 22, 23, 26]},
             {name: 'Deutsch Female', voiceIDs: [27, 28, 29, 30, 31, 32]},
