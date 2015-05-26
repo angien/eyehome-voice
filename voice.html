@@ -7,7 +7,7 @@
 
 <input 
   id="speak"
-  onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click();"
+  onkeydown="if (event.keyCode == 13) document.getElementById('speak').click();"
   onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" 
   type="button" 
   value="Play" 
