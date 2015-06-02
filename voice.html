@@ -54,16 +54,16 @@
 		<h4>New Message</h4>
 		<div class="progress" id="rlp"></div>
 	</div>
-	<div class='rectangleTop' ng-click="chooseMessage()" id="rt">
-		<h4>Saved Messages</h4>
+	<div class='rectangleTop' ng-click="playAlert()" id="rt">
+		<h4><span style="color: red;">Alert:</span> "I need help"</h4>
 		<div class="progress" id="rtp"></div>
 	</div>
-	<div class='rectangleRight' ng-click="playMessage()" id="rr">
-		<h4>Play Message</h4>
+	<div class='rectangleRight' ng-click="chooseMessage()" id="rr">
+		<h4>Saved Messages</h4>
 		<div class="progress" id="rrp"></div>
 	</div>
-	<div class='rectangleBottom' ng-click="quit()" id="rb"><!-- should quit app-->
-		<h4>Back</h4>
+	<div class='rectangleBottom' ng-click="" id="rb"><!-- doesn't do anything right now-->
+		<h4></h4>
 		<div class="progress" id="rbp"></div>
 	</div>
 </div>
@@ -88,19 +88,18 @@
 </div>
 
 <div id="voice-center" class="row clearfix">
-	<div class="greeting" class="row">
+	<div id="screen2-messages" ng-show="currentScreen == 2">
+		<div class="greeting" class="row">
+			<div class="col-lg-12">
+				Messages:<br/>&nbsp;
+			</div>
+		</div>
 		<div class="col-lg-12">
-			Current message:<br/>&nbsp;
+			<div class="list" id="voice-message" ng-bind-html="arrayToString(messages)">
+				
+			</div>
 		</div>
 	</div>
-	<div class="col-lg-12">
-		<div id="voice-message">
-
-			{{displayMessage}}
-
-		</div>
-
-  	</div>
 </div>	
 </body>
 
